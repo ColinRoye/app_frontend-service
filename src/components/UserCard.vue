@@ -2,7 +2,7 @@
      <body>
 
        <div class="row">
-         <div class="col s12 m3">
+         <div class="col s3">
            <div class="card horizontal">
              <div class="card-image">
                <img class="responsive-img" src="./../assets/defaultUser.jpg" />
@@ -26,10 +26,10 @@
 <script>
     export default {
         name: 'Login',
+        props:['username'],
         data() {
             return {
                 input: {
-                    username: "",
                     password: ""
                 }
             }
@@ -60,10 +60,10 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
      <style scoped>
      .row {
-       /* position: relative;
+       position: relative;
 
-        width:1200px;
-        max-height:160px; */
+        width:1240px;
+        height: 148px;
       }
     .test {
        border-radius: 50%;
